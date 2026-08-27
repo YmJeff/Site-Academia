@@ -16,3 +16,4 @@ function revelarElementos() {
 window.addEventListener("scroll", revelarElementos);
 
 revelarElementos();
+
