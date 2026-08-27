@@ -1,0 +1,689 @@
+/*CABEÇALHO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+header h1 {
+    color: #e10600;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #e10600;
+}
+
+
+/* INICIO */
+#inicio {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 60px;
+
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("img/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicio h2 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 64px;
+    font-weight: 800;
+
+    max-width: 700px;
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+#inicio p {
+    font-size: 22px;
+    max-width: 650px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #d6d6d6;
+}
+
+#inicio p span {
+    color: #e10600;
+    font-weight: bold;
+}
+
+#inicio a {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #e10600;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #ff1a14;
+    transform: translateY(-3px);
+}
+
+
+/* SOBRE */
+#sobre {
+    padding: 100px 60px;
+    text-align: center;
+    background-color: #111111;
+}
+
+#sobre h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#sobre > p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #bdbdbd;
+}
+
+.sobre-dados {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dado {
+    flex: 1;
+
+    padding: 35px 20px;
+
+    background-color: #181818;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.dado h3 {
+    font-size: 42px;
+    color: #e10600;
+    margin-bottom: 10px;
+}
+
+.dado p {
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dado:hover {
+    transform: translateY(-8px);
+    border-color: #e10600;
+}
+
+
+/*TREINOS*/
+#treinos {
+    padding: 100px 60px;
+    background-color: #151515;
+    text-align: center;
+}
+
+#treinos h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    color: #bdbdbd;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.treinos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.treino-card {
+    width: 260px;
+    background-color: #1d1d1d;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    border: 1px solid #2c2c2c;
+
+    transition: 0.3s;
+}
+
+.treino-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.treino-card h3 {
+    color: #e10600;
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.treino-card h3 {
+    color: #e10600;
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.treino-card p {
+    padding: 0 20px 25px;
+    color: #d6d6d6;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.treino-card:hover {
+    transform: translateY(-10px);
+    border-color: #e10600;
+    box-shadow: 0 10px 30px rgba(225, 6, 0, 0.25);
+}
+
+/* PLANOS */
+#planos {
+    padding: 100px 60px;
+    background-color: #111111;
+    text-align: center;
+}
+
+#planos h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.plano-card {
+    position: relative;
+
+    width: 300px;
+    padding: 40px 30px;
+
+    background-color: #1a1a1a;
+
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.plano-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.descricao-plano {
+    color: #bdbdbd;
+    line-height: 1.6;
+    min-height: 80px;
+}
+
+.preco {
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #e10600;
+
+    margin: 25px 0;
+}
+
+.plano-card button {
+    padding: 14px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #e10600;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.plano-card button:hover {
+    background-color: #ff1a14;
+    transform: translateY(-2px);
+}
+
+.plano-card.black {
+    border: 2px solid #e10600;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 10px 35px rgba(225, 6, 0, 0.2);
+}
+
+.mais-popular {
+    position: absolute;
+
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 6px 15px;
+
+    background-color: #e10600;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.personal {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+
+.plano-card:hover {
+    transform: translateY(-8px);
+    border-color: #e10600;
+}
+.plano-card.black:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+/* HORARIOS */
+#horarios {
+    padding: 100px 60px;
+    background-color: #151515;
+    text-align: center;
+}
+
+#horarios h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.tabela-container {
+    max-width: 800px;
+    margin: 50px auto 0;
+    overflow-x: auto;
+}
+
+#horarios table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background-color: #1a1a1a;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#horarios th {
+    padding: 18px;
+
+    background-color: #e10600;
+    color: #ffffff;
+
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#horarios td {
+    padding: 16px;
+
+    color: #d6d6d6;
+
+    border-bottom: 1px solid #2c2c2c;
+
+    font-size: 16px;
+}
+
+#horarios tbody tr {
+    transition: 0.3s;
+}
+#horarios tbody tr:hover {
+    background-color: #222222;
+}
+
+
+/* CONTATO */
+#contato {
+    padding: 100px 60px;
+    background-color: #111111;
+    text-align: center;
+}
+#contato h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#contato > p {
+    max-width: 650px;
+    margin: 0 auto 50px;
+
+    color: #bdbdbd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#contato form {
+    max-width: 650px;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background-color: #1a1a1a;
+
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+#contato label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 20px;
+
+    background-color: #111111;
+
+    border: 1px solid #333333;
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    border-color: #e10600;
+}
+
+#contato textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contato button {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #e10600;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+#contato button:hover {
+    background-color: #ff1a14;
+    transform: translateY(-2px);
+}
+
+/* RODAPÉ */
+footer {
+    padding: 40px 60px;
+
+    background-color: #080808;
+
+    text-align: center;
+
+    border-top: 1px solid #2a2a2a;
+}
+footer h3 {
+    color: #e10600;
+
+    font-size: 24px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+footer p {
+    color: #888888;
+
+    font-size: 14px;
+
+    margin: 8px 0;
+}
+
+
+/* ANIMAÇÕES */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
+
+#inicio {
+    min-height: calc(100vh - 130px);
+    padding: 40px 25px;
+}
+#inicio h2 {
+    font-size: 42px;
+}
+#inicio p {
+    font-size: 18px;
+}
+
+#sobre {
+    padding: 70px 25px;
+}
+#sobre h2 {
+    font-size: 34px;
+}
+.sobre-dados {
+    flex-direction: column;
+    gap: 20px;
+}
+.dado {
+    width: 100%;
+}
+
+#treinos {
+    padding: 70px 25px;
+}
+#treinos h2 {
+    font-size: 34px;
+}
+.treino-card {
+    width: 100%;
+    max-width: 350px;
+}
+
+#planos {
+    padding: 70px 25px;
+}
+#planos h2 {
+    font-size: 34px;
+}
+.planos-container {
+    flex-direction: column;
+    align-items: center;
+}
+.plano-card {
+    width: 100%;
+    max-width: 350px;
+}
+.plano-card.black {
+    transform: none;
+}
+.plano-card.black:hover {
+   transform: translateY(-8px);
+}
+
+#horarios {
+    padding: 70px 20px;
+}
+.tabela-container {
+    width: 100%;
+}
+
+#horarios td,
+#horarios th {
+    padding: 12px 8px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 35px 20px;
+}
